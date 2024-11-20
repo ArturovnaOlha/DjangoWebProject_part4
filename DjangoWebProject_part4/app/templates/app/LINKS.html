@@ -1,0 +1,28 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'app/css/styles.css' %}">
+
+<h2>Полезные ресурсы</h2>
+<div class="resource-link">
+    <a href="https://www.livemaster.ru/" target="_blank">
+        <img src="{% static 'app/content/YArmarka.png' %}" alt="Logo 1" />
+    </a>
+    <span>Мы на ярмарке мастеров</span>
+</div>
+<div class="resource-link">
+    <a href="https://market.yandex.ru/" target="_blank">
+        <img src="{% static 'app/content/YmarkeT.png' %}" alt="Logo 2" />
+    </a>
+    <span>Мы на яндекс маркете</span>
+</div>
+<div class="resource-link">
+    <a href="https://www.alltime.ru/jewellary/?" target="_blank">
+        <img src="{% static 'app/content/AllTime.png' %}" alt="Logo 3" />
+    </a>
+    <span>Наш партнер</span>
+
+</div>
+{% endblock %}

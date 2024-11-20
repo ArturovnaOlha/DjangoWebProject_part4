@@ -1,0 +1,22 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+{% load static %}
+
+<h1 class="dlyaAbout">{{ title }}.</h1>
+<h2>{{ message }}</h2>
+<style>
+    body {
+        background-color: rgb(247,193,181);
+       
+    }
+    </style>
+
+<section>
+    <p> Приветсвуем Вас в нашей обители ! </p>
+
+    <img src="{% static 'app/content/pic1_glass.jpg' %}" alt="startPic"
+         width="960" height="536">
+</section>
+
+{% endblock %}

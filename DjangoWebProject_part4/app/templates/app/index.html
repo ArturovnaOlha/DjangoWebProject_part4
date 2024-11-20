@@ -1,0 +1,269 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+{% load static %}
+
+
+
+
+<div class="jumbotron">
+    <h1>MyJewelry</h1>
+    <p class="lead">Ваша зона комфорта и самовыражения.</p>
+    <p class="disc">Дисклеймер: сайт является демонстрационным, совпадение контента является умышленным, но не несет коммерческой направленности. </p>
+    <!--<p><a href="https://www.djangoproject.com/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>-->
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Наша философия</h2>
+        <p>
+            Ювелирные украшения - это не просто сверкающие вещички. Это - детали, которые рассказывают о Вас историю
+            Что бы Вы ни выбрали: вычурные или простые, со вставками и орнаментом или лаконичные и минималистичные,
+            они могут рассказать о Вашем вкусе, раскрыть Ваши чувства. Как могут рассказать и о важных для Вас
+            событиях, воспоминаниях, или даже отправить Ваше личное послание в мир.
+
+        </p>
+        <p><a class="btn btn-default" href="about">Подробнее &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>У истоков времени</h2>
+        <p>
+            Украшения являются одним из древнейших видов археологических находок – бусины возрастом 100 000 лет,
+            сделанные из раковин морских моллюсков, считаются самыми древними из известных украшений.
+            Основные формы украшений варьируются в зависимости от культуры, но зачастую они чрезвычайно долговечны;
+            в европейских культурах наиболее распространенные формы украшений (броши, кольца, ожерелья,
+            серьги, кулоны, браслеты и запонки.) сохранились с древних времен,
+            в то время как другие формы, такие как украшения для носа или лодыжек, распространенные в других культурах,
+            встречаются гораздо реже.
+        </p>
+        <p><a class="btn btn-default" href="https://translated.turbopages.org/proxy_u/en-ru.ru.d7ef1cb6-672220a5-5b34187b-74722d776562/https/en.wikipedia.org/wiki/Jewellery">Узнать подробнее &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Интересно, что</h2>
+        <p>
+            На сегодняшний день ювелирная отрасль достигла такого уровня,
+            что модные и красивые изделия делают практически из любого материала.
+            Привычные драгоценные камни зачастую отходят на второй план, уступая место более
+            бюджетным полудрагоценным и поделочным камням. Но отнюдь не все покупательницы знают,
+            чем вставки отличаются друг от друга и почему так разнятся цены у сходных на внешний вид минералов.
+        </p>
+        <p><a class="btn btn-default" href="https://sunlight.net/wiki/kakie-byvayut-dragotsennye-kamni-nazvaniya-klassifikatsiya-svojstva-i-rejting-luchshih.html">Узнать подробнее &raquo;</a></p>
+    </div>
+</div>
+
+
+
+<div class="carousel-container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+        <ol class="carousel-indicators">
+
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+
+        </ol>
+
+        <div class="myitem carousel-inner" role="listbox">
+
+            <div class="item active">
+
+                <img src="{% static 'app/content/banner1.jpg'%} " alt="Первый слайд" class="img-responsive" />
+
+                <div class="carousel-caption" role="option">
+
+                    <p>
+
+                        Пляжное настроение
+
+                        <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
+
+                            Читать далее
+
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="{% static 'app/content/banner2.jpg'%}" alt="Второй слайд" class="img-responsive" />
+
+                <div class="carousel-caption" role="option">
+
+                    <p>
+
+                        Эстетика "Old money"
+
+                        <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
+
+                            Читать далее
+
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src=" {% static 'app/content/banner3.jpg'%} " alt="Третий слайд" class="img-responsive" />
+
+                <div class="carousel-caption" role="option">
+
+                    <p>
+
+                        Эльфийские мотивы
+
+                        <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
+
+                            Читать далее
+
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+            <span class="sr-only">Previous</span>
+
+        </a>
+
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+            <span class="sr-only">Next</span>
+
+        </a>
+
+    </div>
+</div>
+
+
+
+
+
+
+    {% endblock %}
+
+    <!--{% load static %}
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+        <ol class="carousel-indicators">
+
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+
+                <img src="{% static 'app/content/banner1.jpg'%} " alt="Первый слайд" class="img-responsive" />
+
+                <div class="carousel-caption" role="option">
+
+                    <p>
+
+                        Пляжное настроение
+
+                        <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
+
+                            Читать далее
+
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="{% static 'app/content/banner2.jpg'%}" alt="Второй слайд" class="img-responsive" />
+
+                <div class="carousel-caption" role="option">
+
+                    <p>
+
+                        Эстетика "Old money"
+
+                        <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
+
+                            Читать далее
+
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src=" {% static 'app/content/banner3.jpg'%} " alt="Третий слайд" class="img-responsive" />
+
+                <div class="carousel-caption" role="option">
+
+                    <p>
+
+                        Эльфийские мотивы
+
+                        <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
+
+                            Читать далее
+
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+            <span class="sr-only">Previous</span>
+
+        </a>
+
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+            <span class="sr-only">Next</span>
+
+        </a>
+
+    </div>-->

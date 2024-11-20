@@ -1,0 +1,28 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h1>{{ title }}.</h1>
+<hr />
+<!--<div>
+    <h2>Очаровательные 3Д кольца-цветочки</h2>
+    <video src="/media/1 minute of 3D Jewelry.mp4" controls="controls" width="400" height="300"></video>
+</div>
+<hr />
+<div>
+    <h2>Маленький видеоурок по милому колечку</h2>
+    <video src="/media/1-Minute_Ring.mp4" controls="controls" width="400" height="300" poster="/media/minRing.png"></video>
+</div>-->
+
+<div class="video-container">
+    <h2>Очаровательные 3Д кольца-цветочки</h2>
+    <video src="/media/1 minute of 3D Jewelry.mp4" controls="controls" width="400" height="300"></video>
+</div>
+<hr />
+<div class="video-container">
+    <h2>Небольшой видеоурок по созданию простенького колечка</h2>
+    <video src="/media/1-Minute_Ring.mp4" controls="controls" width="400" height="300" poster="/media/minRing.png"></video>
+</div>
+
+
+{% endblock %}

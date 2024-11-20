@@ -1,0 +1,35 @@
+﻿{% if user.is_authenticated %}
+<form id="logoutForm" action="/logout/" method="post" class="navbar-side-form">
+    {% csrf_token %}
+    <ul class="nav flex-column">
+        <li class="nav-item"><span class="nav-link">Приветсвуем, {{ user.username }}!</span></li>
+        <li class="nav-item"><a class="nav-link" href="javascript:document.getElementById('logoutForm').submit()">Выход из системы</a></li>
+    </ul>
+</form>
+
+{% else %}
+
+<ul class="nav flex-column">
+    <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Вход в систему</a></li>
+</ul>
+
+{% endif %}
+
+<!--{% if user.is_authenticated %}
+<form id="logoutForm" action="/logout/" method="post" class="navbar-right">
+    {% csrf_token %}
+    <ul class="nav navbar-nav navbar-right">
+        <li><span class="navbar-brand">Приветсвуем, {{ user.username }}!</span></li>
+        <li><a href="javascript:document.getElementById('logoutForm').submit()">Выход из системы</a></li>
+    </ul>
+</form>
+
+{% else %}
+
+<ul class="nav navbar-nav navbar-right">
+    <li><a href="{% url 'login' %}">Вход в систему</a></li>
+</ul>
+
+{% endif %}-->
+
+
